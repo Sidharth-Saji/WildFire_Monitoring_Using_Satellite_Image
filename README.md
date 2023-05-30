@@ -1,1 +1,1 @@
-# WildFiire_Monitoring_Satellite_Image
+# WildFiire_Monitoring_Using_Satellite_Image
