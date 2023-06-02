@@ -1,4 +1,4 @@
-# WildFiire_Monitoring_Using_Satellite_Image
+# WildFiire Detection Using Satellite Image
 ## ID1110-Introduction TO Programming 
 
 ## Team ID : 
