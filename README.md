@@ -4,7 +4,7 @@ This repository contains a machine learning project that focuses on detecting wi
 
 ## Project Overview
 
-The objective of this project is to develop a wildfire detection model that can analyze satellite images and identify areas prone to wildlifes.we aim to detect and predict wildfires at a certain place.
+The objective of this project is to develop a wildfire detection model that can analyze satellite images and identify areas prone to wildlfire. We aim to detect and predict wildfires at a certain place.
 
 ## Dependencies
 
