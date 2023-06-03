@@ -38,3 +38,9 @@ To use the wildlife detection system,
 follow the steps below:
 
 1. Acquire satellite images or use the provided sample dataset.
+2. preprocess the satellite images, including resizing, normalization, and enhancement techniques.
+3. load the pre-trained wildfire detection model using the code provided.
+4. Apply the model to the preprocessed satellite images to identify wildfire regions.
+5. Visualize and analyze the detected wildfire regions using the provided tools.
+
+for detailed instructions and code examples, refer to the __Jupyter Notebook__ provided in the repository
