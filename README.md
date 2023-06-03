@@ -45,3 +45,14 @@ follow the steps below:
 
 for detailed instructions and code examples, refer to the __Jupyter Notebook__ provided in the repository
 
+## Data
+
+The project requires satellite imagery datasets. You can use publicly available datasets or acquire them from reliable sources. The dataset should include images labeled with wildfire and non-wildfire regions for training and testing purposes.
+
+## Contributing
+
+| Name of Team member  | Roll Number   |
+| -------------------- | ------------- |
+| SIDHARTH SAJI        | 122201026     |
+| NISHANTH TAKUR       | 112201027     |
+| MORI YASHWANTH       | 132201039     |
