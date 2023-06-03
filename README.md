@@ -44,3 +44,4 @@ follow the steps below:
 5. Visualize and analyze the detected wildfire regions using the provided tools.
 
 for detailed instructions and code examples, refer to the __Jupyter Notebook__ provided in the repository
+
