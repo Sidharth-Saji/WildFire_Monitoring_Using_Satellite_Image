@@ -17,7 +17,13 @@
 			</span>
 		</div>
 		<div class="transbox">
-           
+           	    <img id="previewImage" src="#" alt="Preview" style="display:none;">
+            	    <form id="imageForm" enctype="multipart/form-data">
+                	<input type="file" id="imageInput" accept="image/*"
+                	onchange="handleImageSelection(event)">
+                	<button type="button" onclick="processImage()">Process Image</button>
+                	<h1 id="headed"></h1>
+            	    </form>
 		</div>
 	</div>
     <footer id="end">
@@ -26,5 +32,41 @@
             <p id="p">Yashwanth Mori -</p>
             <p id="p">Nishant Thakur -</p>
     </footer>
+    <script>
+        function handleImageSelection(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function() {
+                const previewImage = document.getElementById('previewImage');
+                previewImage.src = reader.result;
+                previewImage.style.display = 'block';
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function processImage() {
+            const imageFile = document.getElementById('imageInput').files[0];
+            const result_img = document.getElementById('headed')
+            
+            let formData = new FormData();
+            formData.append('image', imageFile);
+            
+            fetch('/process_image', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(result => {
+                result_img.textContent = (result.result);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
 </body>
 </html>
