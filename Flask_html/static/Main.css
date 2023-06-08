@@ -46,8 +46,8 @@ html, body{
   margin: 10%;
   opacity: 0.6;
   position: absolute;
-  padding-top: 210px;
-  top: 70px;
+  padding-top: 50px;
+  top: 20px;
   left: 0;
   width: 80%;
   border: 1px solid black;
@@ -69,9 +69,9 @@ html, body{
 }
 
 #previewImage {
-   width: 250px;
-   height: 200px;
-   padding-left: 45%;
+   width: 20%;
+   height: 10%;
+   padding-left: 40%;
    padding-bottom: 50px;
    z-index: 100;
 }
@@ -92,4 +92,9 @@ html, body{
 
 #p {
    padding-left: 20px;
+}
+
+#headed {
+   color: yellow;
+   font-weight: bold;
 }
