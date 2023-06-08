@@ -19,7 +19,7 @@ TEAM ID : F02
 | Name of Team member  | Roll Number   |
 | -------------------- | ------------- |
 | SIDHARTH SAJI        | 122201026     |
-| NISHANTH TAKUR       | 112201027     |
+| NISHANT THAKUR       | 112201027     |
 | MORI YASHWANTH       | 132201039     |
 
 ## Project Overview
