@@ -30,3 +30,9 @@ html, body{
 	color: black;
 	text-decoration: none;
 }
+
+.img1 {
+   width: 300px;
+   height: 200px;
+   padding-left: 50px;
+}
