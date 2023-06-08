@@ -1,14 +1,18 @@
 # WildFire Detection Using Satellite Image
 
-FINAL PROJECT 
-COURSE: ID1110 
-Introduction to Programming
-Instructor :  Albert Sunny 
-              Assistant Professor
-              Computer Science and Engineering
-              Indian Institute of Technology Palakkad
-              [Website] (https://albert-sunny.github.io/)
-## Contributors
+BTech Sem 2 FINAL PROJECT 
+
+<br />Course : ID1110 
+<br />Introduction to Programming
+
+<br />**Instructor**<sub>
+              <br />Albert Sunny 
+              <br />Assistant Professor
+              <br />Computer Science and Engineering
+              <br />Indian Institute of Technology Palakkad
+              <br />[Albert Sunny](https://albert-sunny.github.io/)
+              <sub/>
+## TEAM MEMBERS 
 
 TEAM ID : F02
 
@@ -60,15 +64,15 @@ follow the steps below:
 5. Deploy the model using flask (Folder Flask_HTML)
 6. We can upload images to the deployment and it will predict if wildfire occurs or not and provides a prediction percentage
 
-for detailed instructions and code examples, refer to the __Jupyter Notebook__ Model_Training_2.ipynb provided in the repository
+<br />For detailed instructions and code examples, refer to the __Jupyter Notebook__ Model_Training_2.ipynb provided in the repository
 
 ## Data
 
 The project requires satellite imagery datasets. You can use publicly available datasets or acquire them from reliable sources. The dataset should include images labeled with wildfire and non-wildfire regions for training and testing purposes.
 
-Some Sites from which Data Taken is given Below:
-[NASA](https://visibleearth.nasa.gov/search?q=Forest+Fire)
-[KAGGLE](https://www.kaggle.com/datasets/abdelghaniaaba/wildfire-prediction-dataset)
-[Worlview](https://worldview.earthdata.nasa.gov/)
-[NRSC ISRO](https://www.nrsc.gov.in/)
+<br />Some Sites from which Data Taken is given Below:
+<br />[NASA](https://visibleearth.nasa.gov/search?q=Forest+Fire)
+<br />[KAGGLE](https://www.kaggle.com/datasets/abdelghaniaaba/wildfire-prediction-dataset)
+<br />[Worlview](https://worldview.earthdata.nasa.gov/)
+<br />[NRSC ISRO](https://www.nrsc.gov.in/)
 
