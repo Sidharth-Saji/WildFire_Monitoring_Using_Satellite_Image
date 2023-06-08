@@ -54,7 +54,7 @@ def process_image():
     else:
         result = f'Probability: {predictions[0][1]}'
 
-    return jsonify({'Result': result})
+    return jsonify({'result': result})
 
 
 if __name__ == '__main__':
