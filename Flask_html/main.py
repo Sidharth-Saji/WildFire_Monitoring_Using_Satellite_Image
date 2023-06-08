@@ -8,6 +8,7 @@ import os
 app = Flask(__name__)
 model = tf.keras.models.load_model('models/WildFireDetector.h5')
 
+
 def create_df_img(filepath):
     labels = list(map(lambda x: os.path.split(os.path.split(x)[0])[1], filepath))
     filepath = pd.Series(filepath, name='Filepath').astype(str)
@@ -15,30 +16,33 @@ def create_df_img(filepath):
     df = pd.concat([filepath, labels], axis=1)
     return df
 
+
 @app.route('/')
 def html_file():
     return render_template('Main.html')
 
+
 @app.route('/process_image', methods=['POST'])
 def process_image():
-    Image_upload = request.files['image']
-    file_path = 'Imagefile/' + Image_upload.filename
+
+    image_upload = request.files['image']
+    file_path = 'Imagefile/' + image_upload.filename
 
     # Create a directory if it doesn't exist
     if not os.path.exists('Imagefile/'):
         os.makedirs('Imagefile/')
 
-    Image_upload.save(file_path)
+    image_upload.save(file_path)
 
     # Load the image and preprocess it
-    Process_img = Image.open(file_path)
-    Process_img = Process_img.resize((350, 350))  # Resize the image to match the input size of the model
-    Process_img = np.array(Process_img)  # Convert the image to a numpy array
-    Process_img = Process_img / 255.0  # Normalize the image
-    Process_img = np.expand_dims(Process_img, axis=0)  # Add an extra dimension for batch
+    process_img = Image.open(file_path)
+    process_img = process_img.resize((350, 350))  # Resize the image to match the input size of the model
+    process_img = np.array(process_img)  # Convert the image to a numpy array
+    process_img = process_img / 255.0  # Normalize the image
+    process_img = np.expand_dims(process_img, axis=0)  # Add an extra dimension for batch
 
-    # Make predictions wusing the Wildfire Model
-    predictions = model.predict(Process_img)
+    # Make predictions using the Wildfire Model
+    predictions = model.predict(process_img)
 
     os.remove(file_path)
 
@@ -51,6 +55,7 @@ def process_image():
         result = f'Probability: {predictions[0][1]}'
 
     return jsonify({'Result': result})
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
