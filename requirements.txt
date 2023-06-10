@@ -1,0 +1,10 @@
+os 
+scrapy
+flask
+PIL
+numpy
+tensorflow
+pandas
+pathlib
+matplotlib
+albumentations
